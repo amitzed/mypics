@@ -1,0 +1,51 @@
+body {
+  background-color: steelblue;
+}
+
+tr:nth-child(even){
+  background-color: hsl(0, 0%, 96%);
+}
+
+td{
+  padding: .5em;
+}
+
+h1 {
+  text-align: center;
+}
+
+.companies {
+  background:hsl(0, 0%, 96%);
+}
+
+.people {
+  background: hsl(0, 0%, 98%);
+}
+
+.container {
+  min-width: 90%;
+}
+
+
+table {
+  margin: auto;
+  valign: center;
+}
+
+span {
+  font-weight: bold;
+}
+
+h3, h4 {
+  display: block;
+}
+
+button {
+  margin-bottom: 2vmax;
+}
+
+@media only screen and (max-width: 1000px) {
+    .column {
+      display: block;
+    }
+}
