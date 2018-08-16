@@ -7,4 +7,4 @@
 ### This is a simple app where images & meme text ideas can be uploaded and collected.
 
 
-## Click [here](### *General Assembly Web Development Immersive Project 2: "String Theory"* - **Create a Custom Guitar**) for Heroku link
+## Click [here](https://mypicsga.herokuapp.com/) for Heroku link
