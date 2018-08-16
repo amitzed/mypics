@@ -8,3 +8,7 @@
 
 
 ## Click [here](https://mypicsga.herokuapp.com/) for Heroku link
+
+<p align="center">
+  <img src="Project 4 Screenshot.png" width="850" title="hover text">
+</p>
