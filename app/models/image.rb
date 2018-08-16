@@ -6,7 +6,7 @@ class Image
 
     # add attribute readers for instance access
     attr_reader :id, :img
- 
+
     # connect to postgres
     # DB = PG.connect(host: "localhost", port: 5432, dbname: 'mymemes_development')
 

@@ -126,7 +126,7 @@ class Texts extends React.Component {
             <TextForm
              toggleState={this.toggleState}
              handleCreate={this.handleCreate}
-            handleSubmit={this.handleCreateSubmit}
+             handleSubmit={this.handleCreateSubmit}
             /> : ''
         }
         {

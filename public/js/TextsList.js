@@ -7,7 +7,7 @@ class TextsList extends React.Component {
           return (
             <tr>
               <td onClick={()=> { this.props.getText(text);
-              this.props.toggleState('textsListIsVisible', 'textIsVisible')}}>
+              this.props.toggleState('addTextIsVisible', 'textsListIsVisible')}}>
                 <h3> {text.top_text} </h3>
               </td>
               <td className='text' onClick={()=> {
@@ -17,7 +17,7 @@ class TextsList extends React.Component {
               </td>
               <td>
                 <button className='button is-warning is-small'  onClick={()=>
-                  { this.props.getText(text); this.props.toggleState('textsListIsVisible', 'textIsVisible')}}>Edit</button>
+                  { this.props.getText(text); this.props.toggleState('textsListIsVisible', 'addTextIsVisible')}}>Edit</button>
               </td>
               <td>
                 <button className='button is-danger is-small' onClick={() =>

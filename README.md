@@ -1,24 +1,10 @@
-# myPics
+# [myPics](https://mypicsga.herokuapp.com/)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### General Assembly Web Development Immersive Project 4 using Rails, React & postgreSQL
 
-Things you may want to cover:
+* Ruby version: 2.5.0
 
-* Ruby version
+### This is a simple app where images & meme text ideas can be uploaded and collected.
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Click [here](### *General Assembly Web Development Immersive Project 2: "String Theory"* - **Create a Custom Guitar**) for Heroku link
