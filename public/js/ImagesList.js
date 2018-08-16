@@ -13,10 +13,10 @@ class ImagesList extends React.Component {
                 <h3> {image.top_text} </h3>
               </td>
               <td>
-                  <button className='button is-warning is-small' onClick={() => {this.props.getImage(image); this.props.toggleState('imagesListIsVisible', 'addImageIsVisible')}}>Edit</button>
+                  <button className='button is-warning is-small is-rounded' onClick={() => {this.props.getImage(image); this.props.toggleState('imagesListIsVisible', 'addImageIsVisible')}}>Edit</button>
               </td>
               <td>
-                  <button className='button is-danger is-small' onClick={() => this.props.deleteImage(image, index)}>Delete</button>
+                  <button className='button is-danger is-small is-rounded' onClick={() => this.props.deleteImage(image, index)}>X</button>
               </td>
             </tr>
           )

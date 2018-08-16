@@ -1,26 +1,149 @@
 body {
-  background-color: steelblue;
+  background: linear-gradient(270deg, #f5900e, #071826);
+  background-size: 400% 400%;
+
+  -webkit-animation: animation1 5s ease infinite;
+  -moz-animation: animation1 5s ease infinite;
+  animation: animation1 5s ease infinite;
+
+  @-webkit-keyframes animation1 {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes animation1 {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes animation1 {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+}
+
+.container {
+  /* text-align: center; */
+  background-color: #139e8c;
+  background-image: linear-gradient(90deg, #071826 25%, transparent 25%, transparent 50%, #071826 50%, #2ace83 75%, transparent 75%, #F5900E);
+  background-size: 180px 80px;
+  /* animation: size-in 1.5s 1; */
+  border-radius: 10%;
+}
+
+image {
+  border-radius: 20%;
 }
 
 tr:nth-child(even){
-  background-color: hsl(0, 0%, 96%);
+  background-color: #2ace83;
+  opacity: .9;
+  font-family: 'Slabo 27px', serif;
+  font-size: 20px;
+  color: #071826;
+}
+
+tr:nth-child(odd){
+  background-color: #164059;
+  opacity: .9;
+  font-family: 'Slabo 27px', serif;
+  font-size: 20px;
+  color: #F2E3D5;
 }
 
 td{
   padding: .5em;
+  border-radius: 15%;
+  height: auto;
+  line-height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.title {
+  font-size: 70px;
+  color: #F2E3D5;
+}
+
+.label {
+  font-size: 30px;
+  color: #F2E3D5;
+  background-color: #567D8C;
+  text-align: center;
 }
 
 h1, h2 {
   text-align: center;
+  font-family: 'Cutive', serif;
+  background-color: #071826;
 }
 
-.companies {
-  background:hsl(0, 0%, 96%);
+.texts {
+text-align: center;
 }
 
-.people {
-  background: hsl(0, 0%, 98%);
+.images {
+text-align: center;
 }
+
+.control {
+text-align: center;
+}
+
+h1 {
+  background: linear-gradient(270deg, #f5900e, #071826);
+  background-size: 400% 400%;
+
+  -webkit-animation: animation1 5s ease infinite;
+  -moz-animation: animation1 5s ease infinite;
+  animation: animation1 5s ease infinite;
+
+  @-webkit-keyframes animation1 {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes animation1 {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes animation1 {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+}
+
+h2 {
+  color: #F5900E;
+  font-size: 22px;
+  background: linear-gradient(270deg, #f5900e, #071826);
+  background-size: 400% 400%;
+
+  -webkit-animation: animation1 5s ease infinite;
+  -moz-animation: animation1 5s ease infinite;
+  animation: animation1 5s ease infinite;
+
+  @-webkit-keyframes animation1 {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes animation1 {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes animation1 {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+}
+
 
 .container {
   min-width: 90%;
@@ -29,7 +152,6 @@ h1, h2 {
 
 table {
   margin: auto;
-  valign: center;
 }
 
 span {
@@ -42,6 +164,12 @@ h3, h4 {
 
 button {
   margin-bottom: 2vmax;
+}
+
+.button {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1000px) {

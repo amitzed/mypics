@@ -109,7 +109,7 @@ class Texts extends React.Component {
     return (
       <div className='texts column'>
         <h2> Your Meme Text Ideas </h2>
-        {this.state.textsListIsVisible ?  <button className='button is-success is-outlined is-inverted'
+        {this.state.textsListIsVisible ?  <button className='button is-success is-rounded is-outlined is-inverted'
         onClick={()=>this.toggleState('addTextIsVisible',
         'textsListIsVisible')}>Add Some Text</button> :''}
         {
