@@ -11,6 +11,7 @@ class ImageForm extends React.Component {
     if(this.props.image){
       this.setState({
         img: this.props.image.img,
+        text_id: this.props.image.text_id,
         id: this.props.image.id
       })
     }

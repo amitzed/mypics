@@ -26,7 +26,7 @@ class Text extends React.Component {
           </div>
         </div>
       </div>
-      <TextForm image={this.props.text}   handleSubmit={this.props.handleSubmit}/>
+      <TextForm text={this.props.text}   handleSubmit={this.props.handleSubmit}/>
     </div>
     )
   }

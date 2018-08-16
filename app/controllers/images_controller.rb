@@ -8,10 +8,6 @@ class ImagesController < ApplicationController
 
   # get one (by id)
   def show
-    p 'show method is running'
-    p '++++++++++++++++++++'
-    p '++++++++++++++++++++'
-    p '++++++++++++++++++++'
     render json: Image.find(params["id"])
   end
 

@@ -74,7 +74,7 @@ class Images extends React.Component {
         return updatedImage.json()
       })
       .then(jsonedImage => {
-        //need to update state be naughty, call that db!
+
         this.getImages()
         this.toggleState('imagesListIsVisible', 'imageIsVisible')
       })
@@ -110,7 +110,7 @@ class Images extends React.Component {
     return (
       <div className='images column'>
         <h2> Image Collection </h2>
-        {this.state.imagesListIsVisible ? <button className='button is-success' onClick={()=>this.toggleState('addImageIsVisible', 'imagesListIsVisible')}>Add an Image</button> :''}
+        {this.state.imagesListIsVisible ? <button className='button is-success is-outlined is-inverted' onClick={()=>this.toggleState('addImageIsVisible', 'imagesListIsVisible')}>Add an Image</button> :''}
         {
           this.state.imagesListIsVisible ?
             <ImagesList

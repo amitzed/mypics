@@ -6,7 +6,8 @@ class Texts extends React.Component {
       addTextIsVisible: false,
       textIsVisible: false,
       editTextIsVisible: false,
-      texts : []
+      texts : [],
+      text: {}
     }
     this.deleteText = this.deleteText.bind(this)
     this.handleCreate = this.handleCreate.bind(this)
@@ -74,7 +75,7 @@ class Texts extends React.Component {
         return updatedText.json()
       })
       .then(jsonedText => {
-        //need to update state be naughty, call that db!
+
         this.getTexts()
         this.toggleState('textsListIsVisible', 'textIsVisible')
       })
@@ -108,7 +109,7 @@ class Texts extends React.Component {
     return (
       <div className='texts column'>
         <h2> Your Meme Text Ideas </h2>
-        {this.state.textsListIsVisible ?  <button className='button is-success'
+        {this.state.textsListIsVisible ?  <button className='button is-success is-outlined is-inverted'
         onClick={()=>this.toggleState('addTextIsVisible',
         'textsListIsVisible')}>Add Some Text</button> :''}
         {
@@ -124,6 +125,8 @@ class Texts extends React.Component {
           this.state.addTextIsVisible ?
             <TextForm
              toggleState={this.toggleState}
+             handleCreate={this.handleCreate}
+            handleSubmit={this.handleCreateSubmit}
             /> : ''
         }
         {
@@ -131,6 +134,7 @@ class Texts extends React.Component {
           <Text
            toggleState={this.toggleState}
            text={this.state.text}
+           handleSubmit={this.handleUpdateSubmit}
            /> : ''
         }
       </div>
