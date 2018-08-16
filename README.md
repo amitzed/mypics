@@ -3,6 +3,7 @@
 ### General Assembly Web Development Immersive Project 4 using Rails, React & postgreSQL
 
 * Ruby version: 2.5.0
+* Framework Used: Bulma
 
 ### This is a simple app where images & meme text ideas can be uploaded and collected.
 
