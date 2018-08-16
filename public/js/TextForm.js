@@ -16,6 +16,7 @@ class TextForm extends React.Component {
           <div className='control'>
             <input className='button is-primary' type='submit' />
           </div>
+          
         </form>
           <button className="button is-link" onClick={()=>
           this.props.toggleState('textsListIsVisible',

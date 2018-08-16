@@ -12,9 +12,9 @@ class Text extends React.Component {
           <div className='tile is-2'></div>
           <div className='tile'>
             <div>
-              <h3 className='tile is-child box'><span>Text Name:</span>
+              <h3 className='tile is-child box'><span>Top Text:</span>
               {this.props.text.top_text} </h3>
-              <p className='tile is-child box'><span>Industry:</span>
+              <p className='tile is-child box'><span>Bottom Text:</span>
               {this.props.text.bottom_text} </p>
 
           </div>
@@ -26,7 +26,7 @@ class Text extends React.Component {
           </div>
         </div>
       </div>
-      <TextForm />
+      <TextForm image={this.props.text}   handleSubmit={this.props.handleSubmit}/>
     </div>
     )
   }

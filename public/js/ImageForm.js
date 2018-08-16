@@ -29,7 +29,7 @@ class ImageForm extends React.Component {
       <div className='field'>
         <form onSubmit={this.handleSubmit}>
 
-          <label className='label 'for='img'>Image</label>
+          <label className='label 'for='img'>Add Picture Link Below</label>
           <div className='control'>
             <input
               className='input'

@@ -16,7 +16,8 @@ class TextsList extends React.Component {
                   <h3> {text.bottom_text} </h3>
               </td>
               <td>
-                <button className='button is-warning is-small'>Edit</button>
+                <button className='button is-warning is-small'  onClick={()=>
+                  { this.props.getText(text); this.props.toggleState('textsListIsVisible', 'textIsVisible')}}>Edit</button>
               </td>
               <td>
                 <button className='button is-danger is-small' onClick={() =>

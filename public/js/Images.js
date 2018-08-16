@@ -109,7 +109,7 @@ class Images extends React.Component {
   render () {
     return (
       <div className='images column'>
-        <h2> Images </h2>
+        <h2> Image Collection </h2>
         {this.state.imagesListIsVisible ? <button className='button is-success' onClick={()=>this.toggleState('addImageIsVisible', 'imagesListIsVisible')}>Add an Image</button> :''}
         {
           this.state.imagesListIsVisible ?

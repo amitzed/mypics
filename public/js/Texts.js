@@ -9,9 +9,11 @@ class Texts extends React.Component {
       texts : []
     }
     this.deleteText = this.deleteText.bind(this)
+    this.handleCreate = this.handleCreate.bind(this)
+    this.handleCreateSubmit = this.handleCreateSubmit.bind(this)
     this.getText = this.getText.bind(this)
     this.toggleState = this.toggleState.bind(this)
-
+    this.handleUpdateSubmit = this.handleUpdateSubmit.bind(this)
   }
 
   componentDidMount () {
@@ -32,6 +34,53 @@ class Texts extends React.Component {
       })
     })
   }
+
+
+  handleCreate (text) {
+    const updatedTexts = this.state.texts
+    updatedTexts.unshift(text)
+    this.setState({texts: updatedTexts})
+  }
+
+  handleCreateSubmit (text) {
+    fetch('/texts', {
+      body: JSON.stringify(text),
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(createdText => {
+        return createdText.json()
+      })
+      .then(jsonedText => {
+        this.handleCreate(jsonedText)
+        this.toggleState('addTextIsVisible', 'textsListIsVisible')
+      })
+      .catch(error => console.log(error))
+    }
+
+    handleUpdateSubmit (text) {
+    fetch('/texts/'+ text.id, {
+      body: JSON.stringify(text),
+      method: 'PUT',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(updatedText => {
+        return updatedText.json()
+      })
+      .then(jsonedText => {
+        //need to update state be naughty, call that db!
+        this.getTexts()
+        this.toggleState('textsListIsVisible', 'textIsVisible')
+      })
+      .catch(error => console.log(error))
+
+}
 
   getText( text ) {
     this.setState({text: text})
@@ -58,7 +107,7 @@ class Texts extends React.Component {
   render () {
     return (
       <div className='texts column'>
-        <h2> Texts </h2>
+        <h2> Your Meme Text Ideas </h2>
         {this.state.textsListIsVisible ?  <button className='button is-success'
         onClick={()=>this.toggleState('addTextIsVisible',
         'textsListIsVisible')}>Add Some Text</button> :''}
